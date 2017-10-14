@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient"
+        android:title="@string/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.example.parth.livetv.SquareImageView
+                android:id="@+id/toolbar_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:transitionName="toolbar_transition_image" />
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="8dp"
+                android:text="@string/label"
+                android:transitionName="toolbar_transition_label"
+                android:textColor="#263238"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+</android.support.design.widget.CoordinatorLayout>

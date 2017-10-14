@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.parth.livetv">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.NewsGrid" />
+
+        <activity
+            android:name=".activities.NewsVideoPlayingActivity"
+            android:theme="@style/AppTheme.player" />
+
+        <activity android:name=".activities.Dashboard" />
+        <activity android:name=".activities.TVChannelsGrid" />
+        <activity android:name=".activities.TVChannelsSerialsGrid" />
+        <activity android:name=".activities.PlaylistVideoPlayingActivity" />
+        <activity android:name=".activities.MusicGrid" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
